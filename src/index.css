@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap");
+
+:root {
+  --cream: #fbf5ef;
+  --cream-2: #f5e9df;
+  --pink: #d89aa9;
+  --pink-dark: #b96f82;
+  --pink-soft: #ead0d5;
+  --rose: #c98495;
+  --brown: #332923;
+  --muted: #766861;
+  --white: #fffdfb;
+  --shadow: 0 25px 70px rgba(74, 43, 48, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--brown);
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body,
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+::selection {
+  background: var(--pink);
+  color: white;
+}
