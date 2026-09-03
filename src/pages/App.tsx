@@ -39,22 +39,20 @@ function App() {
 
   return (
     <div className="site">
-
       {/* =========================
           NAVBAR
       ========================= */}
       <header className={`navbar ${menuOpen ? "menu-open" : ""}`}>
-
         <a
           href="#accueil"
           className="brand"
           onClick={closeMenu}
         >
-          <span className="brand-mark">MD</span>
+          <span className="brand-mark">NP</span>
 
           <span>
-            <strong>MES DÉLICES</strong>
-            <small>TRAITEUR · TOULOUSE</small>
+            <strong>NOVA PROJECT</strong>
+            <small>PROJET · DIRECTION CRÉATIVE</small>
           </span>
         </a>
 
@@ -67,7 +65,7 @@ function App() {
         </nav>
 
         <a href="#contact" className="nav-cta">
-          Parlons de votre événement
+          Parlons de votre projet
         </a>
 
         {/* MOBILE */}
@@ -104,20 +102,16 @@ function App() {
             className="mobile-nav-cta"
             onClick={closeMenu}
           >
-            Parlons de votre événement
+            Parlons de votre projet
           </a>
         </nav>
-
       </header>
 
-
       <main>
-
         {/* =========================
             HERO
         ========================= */}
         <section className="hero" id="accueil">
-
           <div
             className="hero-background"
             style={{
@@ -128,32 +122,30 @@ function App() {
           <div className="hero-overlay" />
 
           <div className="hero-content">
-
             <p className="eyebrow light">
-              TRAITEUR · TOULOUSE · CUGNAUX
+              PROJET DIGITAL · DIRECTION CRÉATIVE
             </p>
 
             <h1>
-              Des réceptions
+              Une expérience
               <br />
-              <em>gourmandes</em>
+              <em>gourmande</em>
               <br />
-              et inoubliables.
+              et élégante.
             </h1>
 
             <p className="hero-description">
-              Buffets généreux, créations gourmandes et jolies tables
-              imaginés pour vos mariages, anniversaires et réceptions
-              privées.
+              Un univers digital imaginé autour de la gastronomie,
+              de l'événementiel et d'une direction artistique
+              chaleureuse.
             </p>
 
             <div className="hero-buttons">
-
               <a
                 href="#prestations"
                 className="button button-light"
               >
-                Découvrir nos prestations
+                Découvrir le projet
               </a>
 
               <a
@@ -162,75 +154,63 @@ function App() {
               >
                 Voir les créations
               </a>
-
             </div>
 
             <div className="hero-tags">
-              <span>Mariages</span>
+              <span>Direction artistique</span>
               <i />
-              <span>Réceptions</span>
+              <span>Web design</span>
               <i />
-              <span>Buffets</span>
+              <span>Expérience digitale</span>
             </div>
-
           </div>
 
-
           <div className="hero-photo-card">
-
             <img
               src={images.buffet}
-              alt="Buffet généreux Mes Délices"
+              alt="Aperçu du projet"
             />
 
             <div>
               <span>01</span>
 
               <strong>
-                Des buffets
+                Une identité
                 <br />
-                qui donnent envie.
+                pensée dans le détail.
               </strong>
             </div>
-
           </div>
-
 
           <div className="scroll-indicator">
             <span />
             <small>Découvrir</small>
           </div>
-
         </section>
-
 
         {/* =========================
             INTRO
         ========================= */}
         <section className="intro">
-
           <div className="intro-inner">
-
             <p className="eyebrow">
               L'ART DE RECEVOIR
             </p>
 
             <h2>
-              Une belle table,
+              Une belle expérience,
               <br />
               <em>une vraie histoire.</em>
             </h2>
 
             <p className="intro-text">
-              Chez Mes Délices, chaque réception est pensée comme un
-              moment généreux et chaleureux. De la cuisine à la
-              présentation, chaque détail compte.
+              Un concept digital pensé pour mettre en valeur un
+              univers culinaire et événementiel. De la direction
+              artistique à la présentation des contenus, chaque
+              détail participe à l'expérience.
             </p>
-
           </div>
-
         </section>
-
 
         {/* =========================
             PRESTATIONS
@@ -239,13 +219,10 @@ function App() {
           className="prestations"
           id="prestations"
         >
-
           <div className="section-heading">
-
             <div>
-
               <p className="eyebrow">
-                NOS PRESTATIONS
+                LES UNIVERS DU PROJET
               </p>
 
               <h2>
@@ -253,183 +230,149 @@ function App() {
                 <br />
                 <em>une ambiance différente.</em>
               </h2>
-
             </div>
 
             <p>
-              Des prestations pensées selon votre événement, son
-              ambiance et vos envies.
+              Une direction artistique construite autour de
+              plusieurs expériences visuelles et éditoriales.
             </p>
-
           </div>
 
-
           <div className="service-grid">
-
-            {/* MARIAGES */}
+            {/* UNIVERS 01 */}
             <article className="service-card">
-
               <div className="service-image">
-
                 <img
                   src={images.wedding}
-                  alt="Réception de mariage élégante"
+                  alt="Univers événementiel élégant"
                 />
 
                 <span>01</span>
-
               </div>
 
               <div className="service-body">
-
                 <p className="card-label">
-                  POUR LE GRAND JOUR
+                  L'EXPÉRIENCE
                 </p>
 
                 <h3>
-                  Mariages
+                  Événements
                 </h3>
 
                 <p>
-                  Un buffet élégant, une réception chaleureuse et
-                  une présentation pensée pour célébrer votre mariage.
+                  Une présentation élégante pensée pour mettre en
+                  avant les grands moments et créer une expérience
+                  visuelle immersive.
                 </p>
 
                 <a href="#contact">
-                  Parler de mon mariage
+                  Découvrir le projet
                 </a>
-
               </div>
-
             </article>
 
-
-            {/* BUFFETS */}
+            {/* UNIVERS 02 */}
             <article className="service-card featured-card">
-
               <div className="service-image">
-
                 <img
                   src={images.buffet}
-                  alt="Grand buffet gourmand"
+                  alt="Composition culinaire élégante"
                 />
 
                 <span>02</span>
-
               </div>
 
               <div className="service-body">
-
                 <p className="card-label">
-                  LE PLAISIR DE PARTAGER
+                  L'IDENTITÉ VISUELLE
                 </p>
 
                 <h3>
-                  Buffets généreux
+                  Créations
                 </h3>
 
                 <p>
-                  Des préparations variées, généreuses et joliment
-                  présentées pour créer une table qui attire tous les
-                  regards.
+                  Des compositions généreuses, une photographie
+                  immersive et une mise en scène conçue pour
+                  attirer naturellement le regard.
                 </p>
 
                 <a href="#galerie">
-                  Voir nos buffets
+                  Voir les créations
                 </a>
-
               </div>
-
             </article>
 
-
-            {/* RÉCEPTIONS */}
+            {/* UNIVERS 03 */}
             <article className="service-card">
-
               <div className="service-image">
-
                 <img
                   src={images.reception}
-                  alt="Salle pour une réception privée"
+                  alt="Espace de réception contemporain"
                 />
 
                 <span>03</span>
-
               </div>
 
               <div className="service-body">
-
                 <p className="card-label">
-                  POUR VOS MOMENTS PRIVÉS
+                  L'AMBIANCE
                 </p>
 
                 <h3>
-                  Réceptions privées
+                  Réceptions
                 </h3>
 
                 <p>
-                  Anniversaire, baptême, repas de famille ou soirée
-                  entre proches : nous imaginons une réception à
-                  votre image.
+                  Un univers graphique adaptable à différents
+                  formats, pensé pour transmettre une atmosphère
+                  chaleureuse et premium.
                 </p>
 
                 <a href="#contact">
-                  Parler de mon événement
+                  Découvrir l'univers
                 </a>
-
               </div>
-
             </article>
-
           </div>
-
         </section>
-
 
         {/* =========================
             FEATURE
         ========================= */}
         <section className="feature">
-
           <div className="feature-image">
-
             <img
               src={images.outdoor}
-              alt="Grande réception extérieure avec buffet"
+              alt="Grande réception extérieure"
             />
-
           </div>
 
           <div className="feature-content">
-
             <p className="eyebrow">
               DES MOMENTS À PARTAGER
             </p>
 
             <h2>
-              Le buffet devient
+              Le visuel devient
               <br />
-              <em>le cœur de la fête.</em>
+              <em>le cœur de l'expérience.</em>
             </h2>
 
             <p>
-              De grandes tables généreuses, des créations gourmandes
-              et une présentation soignée : tout est imaginé pour
-              donner envie de se servir, de goûter et surtout de
-              partager.
+              Une grande image, une composition maîtrisée et une
+              hiérarchie claire permettent de transformer chaque
+              section en véritable moment visuel.
             </p>
 
             <a
               href="#contact"
               className="button button-pink"
             >
-              Imaginer ma réception
+              Découvrir le projet
             </a>
-
           </div>
-
         </section>
-
 
         {/* =========================
             GALERIE
@@ -438,13 +381,10 @@ function App() {
           className="gallery-section"
           id="galerie"
         >
-
           <div className="gallery-heading">
-
             <div>
-
               <p className="eyebrow">
-                L'UNIVERS MES DÉLICES
+                L'UNIVERS DU PROJET
               </p>
 
               <h2>
@@ -452,82 +392,65 @@ function App() {
                 <br />
                 <em>qui se regardent.</em>
               </h2>
-
             </div>
 
             <p>
-              Une sélection de buffets, desserts et réceptions dans
-              l'esprit chaleureux de Mes Délices.
+              Une sélection de compositions, d'ambiances et de
+              contenus visuels imaginés pour construire une identité
+              cohérente.
             </p>
-
           </div>
 
-
           <div className="gallery-grid">
-
             <div className="gallery-item gallery-large">
-
               <img
                 src={images.buffet}
-                alt="Grand buffet gourmand"
+                alt="Composition culinaire"
               />
 
               <div className="gallery-caption">
                 <span>01</span>
-                <strong>Buffets généreux</strong>
+                <strong>Compositions</strong>
               </div>
-
             </div>
 
-
             <div className="gallery-item">
-
               <img
                 src={images.desserts}
-                alt="Buffet de desserts"
+                alt="Composition de desserts"
               />
 
               <div className="gallery-caption">
                 <span>02</span>
-                <strong>Douceurs & desserts</strong>
+                <strong>Douceurs & détails</strong>
               </div>
-
             </div>
 
-
             <div className="gallery-item">
-
               <img
                 src={images.pastry}
-                alt="Gâteau et pâtisserie élégante"
+                alt="Création pâtissière"
               />
 
               <div className="gallery-caption">
                 <span>03</span>
                 <strong>Créations gourmandes</strong>
               </div>
-
             </div>
 
-
             <div className="gallery-item gallery-wide">
-
               <img
                 src={images.table}
-                alt="Table élégante pour une réception"
+                alt="Mise en scène de réception"
               />
 
               <div className="gallery-caption">
                 <span>04</span>
-                <strong>Tables de réception</strong>
+                <strong>Art de la table</strong>
               </div>
-
             </div>
-
           </div>
-
         </section>
-
 
         {/* =========================
             ABOUT
@@ -536,35 +459,28 @@ function App() {
           className="about"
           id="apropos"
         >
-
           <div className="about-image">
-
             <img
               src={images.flowers}
-              alt="Décoration élégante de mariage"
+              alt="Composition florale élégante"
             />
 
             <div className="about-badge">
-
               <strong>
                 100%
               </strong>
 
               <span>
-                fait avec
+                pensé dans
                 <br />
-                passion
+                le détail
               </span>
-
             </div>
-
           </div>
 
-
           <div className="about-content">
-
             <p className="eyebrow">
-              MES DÉLICES
+              LE CONCEPT
             </p>
 
             <h2>
@@ -574,39 +490,33 @@ function App() {
             </h2>
 
             <p>
-              Basée à Cugnaux, près de Toulouse, Mes Délices
-              accompagne vos plus beaux moments avec une cuisine
-              généreuse et une attention particulière portée à la
-              présentation.
+              Ce concept associe une direction artistique raffinée
+              à une expérience digitale pensée pour valoriser
+              l'univers culinaire et événementiel.
             </p>
 
             <p>
-              Parce qu'une réception réussie ne se résume pas à ce
-              qu'il y a dans l'assiette, nous imaginons une véritable
-              expérience autour de votre événement.
+              L'objectif : créer une identité chaleureuse,
+              immersive et mémorable, tout en conservant une
+              navigation simple et intuitive.
             </p>
 
             <a
               href="#contact"
               className="button button-pink"
             >
-              Découvrir Mes Délices
+              Découvrir le concept
             </a>
-
           </div>
-
         </section>
-
 
         {/* =========================
             DESSERT FEATURE
         ========================= */}
         <section className="dessert-feature">
-
           <div className="dessert-copy">
-
             <p className="eyebrow">
-              LA TOUCHE SUCRÉE
+              LA TOUCHE FINALE
             </p>
 
             <h2>
@@ -616,32 +526,26 @@ function App() {
             </h2>
 
             <p>
-              Mignardises, pâtisseries, fruits et desserts généreux
-              trouvent leur place sur des buffets pensés pour être
-              aussi beaux que gourmands.
+              Des contenus visuels travaillés jusque dans les
+              moindres détails pour créer une présence digitale
+              aussi belle que cohérente.
             </p>
 
             <a
               href="#contact"
               className="text-link"
             >
-              Imaginer mon buffet
+              Découvrir le projet
             </a>
-
           </div>
-
 
           <div className="dessert-image">
-
             <img
               src={images.desserts}
-              alt="Buffet élégant de desserts"
+              alt="Composition élégante de desserts"
             />
-
           </div>
-
         </section>
-
 
         {/* =========================
             CONTACT
@@ -650,11 +554,9 @@ function App() {
           className="contact"
           id="contact"
         >
-
           <div className="contact-inner">
-
             <p className="eyebrow light">
-              VOTRE PROCHAIN ÉVÉNEMENT
+              UN PROJET NOVA
             </p>
 
             <h2>
@@ -664,87 +566,72 @@ function App() {
             </h2>
 
             <p>
-              Mariage, anniversaire, réception privée ou buffet
-              gourmand : racontez-nous simplement votre projet.
+              Direction artistique, identité digitale ou création
+              de site : chaque projet peut devenir une expérience
+              pensée sur mesure.
             </p>
 
             <a
-              href="mailto:contact@mesdelices31.fr"
+              href="#accueil"
               className="button button-light"
             >
-              Parler de votre événement
+              Découvrir NOVA
             </a>
 
             <div className="contact-info">
-
               <span>
-                Toulouse · Cugnaux
+                Projet portfolio
               </span>
 
               <span>
-                @mesdelices31_
+                Direction artistique · Web design
               </span>
-
             </div>
-
           </div>
-
         </section>
-
       </main>
-
 
       {/* =========================
           FOOTER
       ========================= */}
       <footer>
-
         <a
           href="#accueil"
           className="brand footer-brand"
         >
-
           <span className="brand-mark">
-            MD
+            NP
           </span>
 
           <span>
             <strong>
-              MES DÉLICES
+              NOVA PROJECT
             </strong>
 
             <small>
-              TRAITEUR · TOULOUSE
+              PROJET · DIRECTION CRÉATIVE
             </small>
           </span>
-
         </a>
-
 
         <p>
-          Traiteur · Toulouse · Cugnaux
+          Projet portfolio · Direction artistique · Web design
         </p>
 
-
         <a href="#contact">
-          Parler de votre événement
+          Découvrir le projet
         </a>
 
-
         <div className="footer-bottom">
-
           <span>
-            © 2026 Mes Délices
+            © 2026 Projet portfolio
           </span>
 
           <span>
-            Mariages · Réceptions · Buffets
+            Direction artistique · Web design · Expérience digitale
           </span>
-
         </div>
-
       </footer>
-
 
       {/* CTA MOBILE */}
       <a
@@ -752,9 +639,8 @@ function App() {
         className="mobile-cta"
         onClick={closeMenu}
       >
-        Parler de votre événement
+        Découvrir le projet
       </a>
-
     </div>
   );
 }
